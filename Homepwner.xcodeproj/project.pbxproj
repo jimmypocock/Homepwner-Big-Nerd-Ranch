@@ -17,6 +17,7 @@
 		54FE021E1E3589BA00C7715C /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FE021D1E3589BA00C7715C /* Item.swift */; };
 		54FE02201E358D5400C7715C /* ItemStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FE021F1E358D5400C7715C /* ItemStore.swift */; };
 		54FE02241E35B20700C7715C /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FE02231E35B20700C7715C /* ItemCell.swift */; };
+		54FE02271E35C9B600C7715C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FE02261E35C9B600C7715C /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		54FE021D1E3589BA00C7715C /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		54FE021F1E358D5400C7715C /* ItemStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemStore.swift; sourceTree = "<group>"; };
 		54FE02231E35B20700C7715C /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
+		54FE02261E35C9B600C7715C /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				54FE02191E3588AD00C7715C /* ItemsViewController.swift */,
+				54FE02261E35C9B600C7715C /* DetailViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -295,6 +298,7 @@
 				54FE021A1E3588AD00C7715C /* ItemsViewController.swift in Sources */,
 				54FE021E1E3589BA00C7715C /* Item.swift in Sources */,
 				54FE02201E358D5400C7715C /* ItemStore.swift in Sources */,
+				54FE02271E35C9B600C7715C /* DetailViewController.swift in Sources */,
 				54FE01EA1E35853300C7715C /* AppDelegate.swift in Sources */,
 				54FE02241E35B20700C7715C /* ItemCell.swift in Sources */,
 			);
