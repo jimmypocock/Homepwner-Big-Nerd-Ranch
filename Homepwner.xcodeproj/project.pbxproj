@@ -14,6 +14,7 @@
 		54FE01F41E35853300C7715C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54FE01F21E35853300C7715C /* LaunchScreen.storyboard */; };
 		54FE01FF1E35853300C7715C /* HomepwnerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FE01FE1E35853300C7715C /* HomepwnerTests.swift */; };
 		54FE020A1E35853300C7715C /* HomepwnerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FE02091E35853300C7715C /* HomepwnerUITests.swift */; };
+		54FE021A1E3588AD00C7715C /* ItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FE02191E3588AD00C7715C /* ItemsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		54FE02051E35853300C7715C /* HomepwnerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HomepwnerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		54FE02091E35853300C7715C /* HomepwnerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepwnerUITests.swift; sourceTree = "<group>"; };
 		54FE020B1E35853300C7715C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54FE02191E3588AD00C7715C /* ItemsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				54FE01F01E35853300C7715C /* Assets.xcassets */,
 				54FE01F21E35853300C7715C /* LaunchScreen.storyboard */,
 				54FE01F51E35853300C7715C /* Info.plist */,
+				54FE02191E3588AD00C7715C /* ItemsViewController.swift */,
 			);
 			path = Homepwner;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				54FE01EC1E35853300C7715C /* ViewController.swift in Sources */,
+				54FE021A1E3588AD00C7715C /* ItemsViewController.swift in Sources */,
 				54FE01EA1E35853300C7715C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

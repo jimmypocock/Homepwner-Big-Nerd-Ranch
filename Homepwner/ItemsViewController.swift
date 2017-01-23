@@ -6,4 +6,8 @@
 //  Copyright © 2017 Jimmy Pocock. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class ItemsViewController: UITableViewController {
+    
+}
