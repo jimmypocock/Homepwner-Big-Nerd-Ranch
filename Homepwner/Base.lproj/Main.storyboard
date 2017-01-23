@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -47,29 +48,47 @@
                             </constraints>
                         </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="UITableViewCell" textLabel="1NL-Pe-MCd" detailTextLabel="C7y-Uf-AAS" style="IBUITableViewCellStyleValue1" id="7Ja-lc-vy7">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ItemCell" id="7Ja-lc-vy7" customClass="ItemCell" customModule="Homepwner" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="72" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7Ja-lc-vy7" id="RzP-8H-qO8">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1NL-Pe-MCd">
-                                            <rect key="frame" x="15" y="11" width="34" height="21"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zA4-Eq-kHK">
+                                            <rect key="frame" x="8" y="4" width="42" height="15"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="C7y-Uf-AAS">
-                                            <rect key="frame" x="316" y="11" width="44" height="21"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mWl-yX-Hxq">
+                                            <rect key="frame" x="325" y="11" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                             <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="247" verticalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2pl-9a-Gd5">
+                                            <rect key="frame" x="8" y="25" width="31" height="14.5"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailingMargin" secondItem="mWl-yX-Hxq" secondAttribute="trailing" id="DLe-Kx-kvQ"/>
+                                        <constraint firstItem="2pl-9a-Gd5" firstAttribute="leading" secondItem="zA4-Eq-kHK" secondAttribute="leading" id="VSn-Lc-067"/>
+                                        <constraint firstAttribute="bottom" secondItem="2pl-9a-Gd5" secondAttribute="bottom" constant="4" id="VtL-6x-jLF"/>
+                                        <constraint firstItem="zA4-Eq-kHK" firstAttribute="leading" secondItem="RzP-8H-qO8" secondAttribute="leading" constant="8" id="aq5-Am-7fg"/>
+                                        <constraint firstItem="2pl-9a-Gd5" firstAttribute="top" secondItem="zA4-Eq-kHK" secondAttribute="bottom" constant="6" id="bd0-KV-pra"/>
+                                        <constraint firstItem="zA4-Eq-kHK" firstAttribute="top" secondItem="RzP-8H-qO8" secondAttribute="top" constant="4" id="dId-ti-xtd"/>
+                                        <constraint firstItem="mWl-yX-Hxq" firstAttribute="centerY" secondItem="RzP-8H-qO8" secondAttribute="centerY" id="yXZ-VX-OGi"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="nameLabel" destination="zA4-Eq-kHK" id="KaW-w5-QLC"/>
+                                    <outlet property="serialNumberLabel" destination="2pl-9a-Gd5" id="SG9-dX-NDl"/>
+                                    <outlet property="valueLabel" destination="mWl-yX-Hxq" id="HoZ-nb-BF1"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -80,7 +99,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fHy-Ex-2IM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="111" y="152"/>
+            <point key="canvasLocation" x="109.59999999999999" y="151.57421289355324"/>
         </scene>
     </scenes>
 </document>
